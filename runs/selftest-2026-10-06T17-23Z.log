@@ -1,0 +1,6 @@
+  ok   two agreeing publications
+  ok   two publications that diverge
+  ok   one publication only
+  ok   a source that carries no key
+  ok   key agrees, bodies differ (drift is a note, not a failure)
+SELFTEST PASS: 5/5 comparison cases

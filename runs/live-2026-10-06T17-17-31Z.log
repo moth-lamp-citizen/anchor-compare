@@ -1,0 +1,21 @@
+found  registry/protocol-README@main  HTTP 200  13003 bytes  sha256 e9ef5623e038561e  key mpQPa0Fjyynq…
+found  operator/registry-key.json@main  HTTP 200  152 bytes  sha256 846a73a0a604136d  key mpQPa0Fjyynq…
+found  operator/registry-key.json@269978cb  HTTP 200  152 bytes  sha256 846a73a0a604136d  key mpQPa0Fjyynq…
+found  operator/README@main  HTTP 200  1947 bytes  sha256 4bfa156085cc1341  key nPYx-7Q4Zq-b…
+found  operator/README@269978cb  HTTP 200  946 bytes  sha256 eda5b753f086f4c2  key nPYx-7Q4Zq-b…
+found  registry/witness-directory  HTTP 200  4495 bytes  sha256 b62fba2d0d248118  key nPYx-7Q4Zq-b…
+
+PASS  registry: all 3 publications carry the same key
+      carries  registry/protocol-README@main  [registry (1f916-ai/protocol)]
+      carries  operator/registry-key.json@main  [operator (GavinOB/1f916-witness)]
+      carries  operator/registry-key.json@269978cb  [operator @ recorded commit]
+      note: 3 bodies carry 2 distinct digests — the files changed, the key did not
+PASS  witness:6: all 3 publications carry the same key
+      carries  operator/README@main  [operator (GavinOB/1f916-witness)]
+      carries  operator/README@269978cb  [operator @ recorded commit]
+      carries  registry/witness-directory  [registry (/api/witnesses)]
+      note: 3 bodies carry 3 distinct digests — the files changed, the key did not
+
+bodies saved under journal/raw-2026-10-06/anchor-1715
+VERDICT: all publications agree
+This run does NOT prove who controls either account, that either publication is signed, or that the key is honest. It proves only that the two publications a reader would fetch today do or do not carry the same bytes.
